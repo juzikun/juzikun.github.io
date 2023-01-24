@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>Family Album</title>
+    <link rel="stylesheet" href="CSS/25E0.css">
+    <script src="https://kit.fontawesome.com/b665d065c7.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: white;
+                background:linear-gradient(90deg, rgba(91, 236, 249, 0.3), rgba(255, 0, 150, 0.3)),
+                url(images/ddwpkz5-778ab294-adc4-43a7-896b-15d0d57de5d9.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                margin: 20px;
+            }
+            div.a, div.b, div.c {
+                margin: 20px;
+                float: left;
+                border: 3px ridge #ffffff;
+                box-shadow: 5px 5px #102819;
+                padding: 10px;
+                max-width: 200px;
+                text-align: center;
+            }
+            div.a {
+                background:linear-gradient(rgba(232, 57, 41, 0.5), rgba(49, 103, 69, 0.5)),
+                url(images/genshin_stars.jpg);}
+            div.b {
+                background:linear-gradient(rgba(255, 123, 0, 0.5), rgba(255, 21, 0, 0.5)),
+                url(images/genshin_stars.jpg);}
+            div.c {
+                background:linear-gradient(rgba(86, 84, 162, 0.5), rgba(174, 50, 134, 0.5)),
+                url(images/genshin_stars.jpg);}
+            span.a, span.b, span.c {
+                font-size: 40px;
+                font-weight: bold;}
+            span.a {text-shadow: 2px 2px #440909;}
+            span.b {text-shadow: 2px 2px #09360f;}
+            span.c {text-shadow: 2px 2px #330c3b;}
+
+            a:link {color: white; text-decoration: none;}
+            a:visited {color: white; text-decoration: none;}
+
+            .container {
+                position: relative;
+                width: 400px;
+            }
+            .image {
+                width: 100%;
+                height: auto;
+            }
+            .overlay {
+                position: absolute;
+                top: 33;
+                bottom: 0;
+                left: 33;
+                right: 0;
+                float: left;
+                height: 250px;
+                width: 200px;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            .text {
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 120;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            body {
+            animation: fadeInAnimation ease-out 1.2s, slideInFromLeft 1s ease-out 0s 1 ;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            }
+
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }            
+            @keyframes slideInFromLeft {
+                0% {
+                    transform: translateY(30%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+
+        </style>
+  </head>
+    <body>
+
+        <div class="woah">
+            <span class="a">
+                <i class="fa-solid fa-moon"></i>
+                紅月 - UNIT Photo Album
+            </span><br />
+            
+                <div class="b">
+                        <img class="a" src="images/Kuro_US (1.0).png" height="250px"><br />
+                        <span class="a">鬼龍 紅郎</span><br />
+                </div>
+
+                <div class="a">
+                        <img class="a" src="images/Keito_GAGB (1.0).png" height="250px"><br />
+                        <span class="b">蓮巳 敬人</span><br />
+                </div>
+
+                <div class="c">
+                        <img class="a" src="images/Souma_OTTG (1.0).png" height="250px"><br />
+                        <span class="c">神崎 颯馬</span><br />
+                </div>
+
+                <div class="container">
+                    <a href="kuro.html">
+                        <div class="overlay">
+                            <div class="text" style="left: 96;">Kuro Kiryu</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="container">
+                    <a href="keito.html">
+                        <div class="overlay" style="left: 299;">
+                            <div class="text" style="left: 96;">Keito Hasumi</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="container">
+                    <a href="souma.html">
+                        <div class="overlay" style="left: 564;">
+                            <div class="text" style="left: 96;">Souma Kanzaki</div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+
+    </body>
+</html>
